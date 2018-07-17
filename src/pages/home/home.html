@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+    
+   
+    <ion-grid>
+     <ion-row>
+       <ion-col col-6 class="alinhaCentro">
+             <iframe width="140" id="portaocamframe" height="134" src="http://188.166.77.196:1025/monitoring2.mjpg"></iframe>      
+       </ion-col>
+       <ion-col col-6 class="alinhaCentro">
+           <button class="portaoBtn" ion-button color="primary" round (click)="comandoPortao()" [disabled]="!btnPortaoEnabled">Portão</button>
+           
+           <p>
+               <b><u>{{status_portao}}</u></b> 
+               <ion-icon [hidden]="status_portao=='carregando..' || status_portao=='sem conexão..' ?true:false" [name]="aberto ? 'unlock':'lock'" [color]="cor_cadeado"></ion-icon>
+           </p>
+              
+           <p [hidden]="!showTimer">{{sTimer}}</p>
+       </ion-col>
+     </ion-row>        
+     <ion-row>
+       <ion-col col-6>
+            <h3><ion-icon name="thermometer"></ion-icon> Temp: {{temp}}°C</h3>
+            <h3><ion-icon name="water"></ion-icon> Humid: {{humid}}%</h3 >
+            <ion-item>
+                <ion-label>Ar Cond.</ion-label>
+                <ion-toggle color="secondary" [(ngModel)]="isToggled" (ionChange)=fireAir()></ion-toggle>
+            </ion-item>
+       </ion-col>
+        <ion-col col-6 >
+         <h3><ion-icon name="color-fill"></ion-icon> Solo: {{solo}}%</h3>
+       </ion-col>  
+         
+     </ion-row>
+    
+   </ion-grid>   
+    
+ 
+      
+  
+</ion-content>

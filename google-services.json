@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "303627576636",
+    "firebase_url": "https://easygate-9cf24.firebaseio.com",
+    "project_id": "easygate-9cf24",
+    "storage_bucket": "easygate-9cf24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303627576636:android:c9e8eb293ebad34b",
+        "android_client_info": {
+          "package_name": "com.easygate.egrowapp001"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303627576636-r6hdd9hftbsteuakb3krhom4hhdbot3t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "303627576636-r6hdd9hftbsteuakb3krhom4hhdbot3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB49wbh2xdTHgXvlcVKgrrui78ki7PaZxk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

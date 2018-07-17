@@ -1,0 +1,48 @@
+page-home {
+   
+
+  ion-spinner {
+    display: block;
+    margin: auto;
+ 
+  }
+    
+  ion-col {
+      border:1px dashed #c9c9c9;
+      padding: 0;
+      margin: 0;
+  }
+  
+  
+      
+    ion-icon {
+        font-size: 25px; //Preferred size here
+    }
+  
+  ion-card{ 
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  
+  ion-toggle{
+    
+  }
+  
+  .portaoBtn{
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+  }
+  
+  .portaoCamBtn{
+      color: black;
+      font-size: 35px;
+      height: 50%;
+  }
+  
+  .alinhaCentro{
+      text-align: center;
+  }
+}
